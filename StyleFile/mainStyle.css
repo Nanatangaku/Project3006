@@ -21,8 +21,10 @@ body {
 
 /* Style heading */
 h1 {
+    font-family: fantasy;
     font-size: 48px;
-    color: #ff69b4;
+    color: #ffffff;
+    background-color: #333;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -31,5 +33,6 @@ h1 {
 p {
     font-size: 24px;
     color: #333;
+    background-color: #ffffff;
     text-align: center;
 }
