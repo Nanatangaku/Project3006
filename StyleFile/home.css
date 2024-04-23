@@ -9,27 +9,28 @@ body {
 
 }
 
-.navi-bar ul {
-    list-style-type: none;
+.navbar {
     background-color: #111;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-.navi-bar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
+.navdiv {
     display: flex;
-    text-align: center;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navi-bar ul li a:hover {
-    color: grey;
+li {
+    list-style: none;
+    display: inline-block;
 }
 
-.navi-bar li {
-    float: left;
+li a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none
 }
