@@ -1,0 +1,51 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.navi-bar {
+    background: #111;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.navi-bar ul {
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.navi-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navi-bar ul li a:hover {
+    background-color: grey
+}
