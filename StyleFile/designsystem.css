@@ -1,16 +1,159 @@
-:root{
-    --h1:40px;
-    --h2:32px;
-    --h3:28px;
-    --h4:24px;
-    --h5:20px;
-    --h6:16px;
+:root {
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
 
-    --sub:20px;
-    
+    --sub: 20px;
 
-    --label:16px;
-    --ls:5px;
-    
-    --body:14px;
+
+    --label: 16px;
+    --ls: 5px;
+
+    --body: 14px;
+}
+.white{
+    color:white;
+}
+.hero {
+    background-color: #111;
+}
+
+.navbar__logo--image {
+    width: 50px;
+    height: 50px;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.navbar__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar__logo a:hover {
+    color: Red;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: serif;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar_icons {
+    display: none;
+}
+
+
+
+/**
+* Navbar when change size
+**/
+
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+.responsive-video{
+    max-width: 100%;
+    height: auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .navbar__menu {
+        /* display: none; */
+        background: #111;
+        position: absolute;
+        top:8vh;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .navbar__menu--1{
+        margin-top:-200px;
+    }
+
+    .navbar_icons {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hidden{
+        z-index: -1;
+        opacity: 0%;
+    }
+}
+
+@media(max-width: 568) {
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
 }

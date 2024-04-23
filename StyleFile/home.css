@@ -5,8 +5,13 @@
 }
 
 body {
+    /* background: url('loginPageBG.jpg') no-repeat; */
     font-family: sans-serif;
+    background-size: cover;
+}
 
+/* .navdiv {
+    height: 50px;
 }
 
 .navbar {
@@ -33,4 +38,4 @@ li a {
     font-weight: bold;
     margin-right: 25px;
     text-decoration: none
-}
+} */
