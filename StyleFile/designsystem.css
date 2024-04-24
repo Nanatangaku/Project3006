@@ -228,7 +228,7 @@ body {
     cursor: pointer;
     color: var(--color-white);
     text-transform: capitalize;
-    border-radius: 50px;
+    border-radius: 15px;
     padding: 10px
 }
 
