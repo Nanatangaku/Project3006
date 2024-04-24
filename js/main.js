@@ -57,7 +57,25 @@ function instagram() {
 function tiktok() {
     window.open("https://tiktok.com");
 }
+function PRIVACYNOICE() {
+    window.open("https://www.riotgames.com/en/privacy-notice");
+}
+function Termsofservice() {
+    window.open("https://www.riotgames.com/en/terms-of-service");
+}
+function CookiePolicy() {
+    window.open("https://www.riotgames.com/en/cookie-policy");
+}
+function Companyinformation() {
+    window.open("https://www.leagueoflegends.com/en-gb/news/riot-games/riot-games-europe-company-information/");
+}
+function test12(){
+    window.open("https://www.leagueoflegends.com/en-gb/news/");
+}
 
+function test13(){
+    window.open("http://www.usk.de/en");
+}
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return rect.bottom < 0 || rect.top > window.innerHeight;
