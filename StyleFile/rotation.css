@@ -1,6 +1,7 @@
 .shell {
-    width: 1200px;
-    height: 700px;
+    overflow: hidden;
+    width: 1215px;
+    height: 717px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;

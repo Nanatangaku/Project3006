@@ -21,11 +21,16 @@
     min-width: 100%;
 }
 
+
 .labelsectionOne {
     font-size: 1.5rem;
     font-weight: 700;
     color: grey;
     font-family: var(--font--family);
+}
+
+.imgright{
+    float:right;
 }
 
 .responsive-video {
