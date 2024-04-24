@@ -1,0 +1,293 @@
+:root {
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+
+    --sub: 20px;
+
+
+    --label: 16px;
+    --ls: 5px;
+
+    --body: 14px;
+
+    --color-aqua: aqua;
+
+    --btn-yellow: rgb(208, 168, 92);
+
+    --title--size: 60px;
+    --text--size: 20px;
+
+    --btn--width: 195px;
+    --btn--height: 56px;
+
+    --font--style: italic;
+    --font--family: "Beaufort for LOL", serif;
+}
+
+
+
+
+
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sectiontwo__btn {
+    border: none;
+    background-color: rgb(208, 168, 92);
+    width: 195px;
+    height: 56px;
+    font-style: italic;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.sectionThree__right--title {
+    font-size: 60px;
+
+}
+
+.sectionThree__right--text {
+    font-size: 20px;
+
+}
+
+.sectionFour__title {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+
+}
+
+
+
+.aqua {
+    color: aqua
+}
+
+
+.white {
+    color: white;
+}
+
+.hero {
+    background-color: #111;
+}
+
+.hero2 {
+
+    align-items: center;
+}
+
+.hero3 {
+    margin: 0 auto;
+}
+
+
+
+.navbar__logo--image {
+    width: 50px;
+    height: 50px;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.navbar__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.navbar__logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar__logo a:hover {
+    color: Red;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: serif;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar_icons {
+    display: none;
+}
+
+
+.navbar .navbar__menu :hover {
+    background: grey;
+}
+
+
+
+/**
+* Navbar when change size
+**/
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+/**
+* video when change size
+**/
+.responsive-video {
+    max-width: 100%;
+    height: auto;
+    padding: 0px 0px;
+}
+
+/**
+* section for 2
+**/
+.grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
+}
+
+.common-label {
+    text-transform: capitalize;
+    font-size: var(40px);
+    font-style: var(--font--style);
+    font-weight: bold;
+}
+
+.common-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.common-text {
+    font-style: var(--font--style);
+    font-size: 20px;
+
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .common-label {
+        text-transform: capitalize;
+        font-size: var(25px);
+        font-style: var(--font--style);
+        font-weight: bold;
+    }
+
+    .common-title {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .common-text {
+        font-style: var(--font--style);
+        font-size: 16px;
+
+    }
+
+    .sectionThree_left{
+        order:0;
+    }
+
+    .sectionThree_right{
+        order:1;
+    
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .navbar__menu {
+        /* display: none; */
+        background: #111;
+        position: absolute;
+        top: 8vh;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .navbar__menu--1 {
+        margin-top: -200px;
+    }
+
+    .navbar_icons {
+        display: block;
+    }
+
+    .sectionFive__left--icons {
+        display: block;
+    }
+
+    .sectionFive__left--icons {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+    .hidden {
+        z-index: -1;
+        opacity: 0%;
+    }
+}
+
+
+
