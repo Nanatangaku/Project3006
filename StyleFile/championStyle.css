@@ -54,12 +54,32 @@ header a{
 
 .carousel .list .champions .content{
     position: absolute;
-    top: 20%;
+    top: 5%;
     width: 1140px;
     max-width: 80%;
     transform: translateX(-50%);
-    padding-right: 30%;
+    padding-left: 50%;
     box-sizing: border-box;
     color: white;
     text-shadow: 0 5px 10px #0004;
+}
+
+.carousel .list .champions .content .ability{
+    width: 1140px;
+    max-width: 80%;
+    margin-left: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    padding-left: auto;
+    
+}
+
+
+.carousel .list .champions .content .champion-ability img{  
+    object-fit: contain;
+    justify-content: space-between;
+    gap: 5px;
 }
