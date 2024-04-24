@@ -4,7 +4,9 @@
     <title>League of Legends</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgFile\lol-logo.png">
     <link rel="stylesheet" href="StyleFile\championStyle.css">
+    <link rel="stylesheet" href="StyleFile/designsystem.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,10 +15,26 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Champion</a>
-        </nav>
+        <div class="hero">
+            <nav class="navbar ">
+                <div class="navbar__logo ">
+    
+                    <div href="#" class="navbar__logo--text">RIOT <br> GAMES</div>
+    
+                    <img src="imgFile\lol-logo.png" alt="" class="navbar__logo--image">
+                </div>
+                <div class="navbar__menu text-center hidden">
+                    <a href="" class="navbar__menu--1 Pointed">Home</a>
+                    <a href="" class="navbar__menu--2 Pointed">Introduction</a>
+                    <a href="" class="navbar__menu--3 Pointed">Game</a>
+                    <a href="" class="navbar__menu--4 Pointed">Champions</a>
+                </div>
+                <div class="navbar_icons">
+                    <i class="bi bi-list white"></i>
+                    <i class="bi bi-x-lg white hide"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Carousel slider -->
@@ -240,21 +258,9 @@
         </div>
         <!-- Thumbnail view-->
         <div class="thumbnail">
-            <!-- Ahri -->
-            <div class="champions">
-                <img src="imgFile/championImg/Ahri/Ahri_0.jpg">
-                <div class="content">
-                    <div class="name">
-                        Ahri
-                    </div>
-                    <div class="role">
-                        Mage
-                    </div>
-                </div>
-            </div>
             <!-- Annie -->
             <div class="champions">
-                <img src="imgFile/championImg/Annie/Annie_0.jpg">
+                <img src="imgFile/championImg/Annie/Annie_0.jpg" >
                 <div class="content">
                     <div class="name">
                         Annie
@@ -312,11 +318,25 @@
                     </div>
                 </div>
             </div>
+            <!-- Ahri -->
+            <div class="champions">
+                <img src="imgFile/championImg/Ahri/Ahri_0.jpg">
+                <div class="content">
+                    <div class="name">
+                        Ahri
+                    </div>
+                    <div class="role">
+                        Mage
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Button -->
         <div class="btn">
             <button id="prev"><</button>
             <button id="next">></button>
+        </div>
+        <div class="time"></div>
     </div>
 
     <script src="js\championAction.js"></script>
