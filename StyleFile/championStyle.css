@@ -115,3 +115,111 @@ body{
     color: #eee;
     border: 1px solid #eee;
 }
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .champions{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .champions img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail .champions .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.thumbnail .champions .content .name{
+    font-weight: bold;
+}
+
+.btn{
+    position: absolute;
+    top: 90%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #eee4;
+    font-family: "monospace", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+    transition: .5s;
+    z-index: 100;
+}
+
+.btn button:hover{
+    background-color: #eee;
+    color: #555;
+}
+
+.carousel .list .champions:nth-child(1){
+    z-index: 1;
+}
+
+.champions .list .champions:nth-child(1).role,
+.champions .list .champions:nth-child(1).name,
+.champions .list .champions:nth-child(1).motto,
+.champions .list .champions:nth-child(1).discription,
+.champions .list .champions:nth-child(1).ability,
+.champions .list .champions:nth-child(1).button{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showChampion 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showChampion{
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.carousel .list .champions:nth-child(1).role{
+    animation-delay: 1.2s;
+}
+.carousel .list .champions:nth-child(1).name{
+    animation-delay: 1.3s;
+}
+.carousel .list .champions:nth-child(1).motto{
+    animation-delay: 1.4s;
+}
+.carousel .list .champions:nth-child(1).discription{
+    animation-delay: 1.5s;
+}
+.carousel .list .champions:nth-child(1).ability{
+    animation-delay: 1.7s;
+}
+.carousel .list .champions:nth-child(1).button{
+    animation-delay: 1.9s;
+}
+
