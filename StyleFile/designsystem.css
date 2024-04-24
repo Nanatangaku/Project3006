@@ -33,7 +33,7 @@
 
 
 body {
-   
+
     align-items: center;
     justify-content: center;
 }
@@ -282,7 +282,7 @@ body {
         z-index: 1;
         background: #111;
         position: absolute;
-        top: 8vh;
+        top: 6vh;
         width: 100%;
         left: 0;
         height: 100vh;
