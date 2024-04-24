@@ -72,7 +72,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: solid rgba(255, 255, 255, 0.5) 5px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .button {
@@ -87,7 +87,7 @@ body {
 .button-left,
 .button-right {
     font-size: 50px;
-    background-color: rgba(102, 123, 161, 0.288);
+    background-color: transparent;
     padding: 0 20px;
     cursor: pointer;
     line-height: 700px;
