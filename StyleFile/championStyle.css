@@ -1,21 +1,7 @@
 header{
-    width:1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 100;
-}
-
-header a{
-    margin-right: 40px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
 }
 
 body{
@@ -30,7 +16,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 0px;
     position: relative;
 
 }
@@ -48,7 +34,7 @@ body{
 
 .carousel .list .champions .content{
     position: absolute;
-    top: 20%;
+    top: 15%;
     width: 1140px;
     max-width: 80%;
     left: 50%;
@@ -137,6 +123,8 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: none;
+    border-radius: 8px;
 }
 
 .thumbnail .champions .content{
@@ -183,17 +171,17 @@ body{
 .carousel .list .champions:nth-child(1){
     z-index: 1;
 }
-
-.champions .list .champions:nth-child(1).role,
-.champions .list .champions:nth-child(1).name,
-.champions .list .champions:nth-child(1).motto,
-.champions .list .champions:nth-child(1).discription,
-.champions .list .champions:nth-child(1).ability,
-.champions .list .champions:nth-child(1).button{
+ 
+.carousel .list .champions:nth-child(1).role,
+.carousel .list .champions:nth-child(1).name,
+.carousel .list .champions:nth-child(1).motto,
+.carousel .list .champions:nth-child(1).discription,
+.carousel .list .champions:nth-child(1).ability,
+.carousel .list .champions:nth-child(1).button{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showChampion 0.5s 1s linear 1 forwards;
+    animation: showChampion 1s linear 1 forwards;
 }
 
 @keyframes showChampion{
@@ -205,21 +193,143 @@ body{
 }
 
 .carousel .list .champions:nth-child(1).role{
-    animation-delay: 1.2s;
+    animation-delay: 0.1s;
 }
 .carousel .list .champions:nth-child(1).name{
-    animation-delay: 1.3s;
+    animation-delay: 0.2s;
 }
 .carousel .list .champions:nth-child(1).motto{
-    animation-delay: 1.4s;
+    animation-delay: 0.3s;
 }
 .carousel .list .champions:nth-child(1).discription{
-    animation-delay: 1.5s;
+    animation-delay: 0.4s;
 }
 .carousel .list .champions:nth-child(1).ability{
-    animation-delay: 1.7s;
+    animation-delay: 0.5s;
 }
 .carousel .list .champions:nth-child(1).button{
-    animation-delay: 1.9s;
+    animation-delay: 0.6s;
+}
+/*
+.carousel.next .list .champions:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage 0.0s linear 1 forwards;
 }
 
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+*/
+.carousel.next .list .champions:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 1s linear 1 forwards;
+}
+
+@keyframes showThumbnail{
+    to{
+        width: 150px;
+    }
+}
+
+.carousel.next .thumbnail{
+    transform: translateX(150px);
+    animation: transformThumbnail 1s linear 1 forwards;
+}
+
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+/*
+.carousel.prev .list .champions:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .champions:nth-child(2) img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: outImage 0.0s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        left: 50%;
+        bottom: 50px;
+        border-radius: 20px;
+    }
+}
+*/
+.carousel.prev .thumbnail .champions:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 1s linear 1 forwards;
+}
+/*
+.carousel.prev .list .champions:nth-child(2).role,
+.carousel.prev .list .champions:nth-child(2).name,
+.carousel.prev .list .champions:nth-child(2).motto,
+.carousel.prev .list .champions:nth-child(2).discription,
+.carousel.prev .list .champions:nth-child(2).ability,
+.carousel.prev .list .champions:nth-child(2).button{
+    animation: contentOut 0s linear 1 forwards;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+}
+*/
+.carousel.next .btn button,
+.carousel.prev .btn button{
+    pointer-events: none;
+}
+
+.time{
+    width: 0%;
+    height: 10px;
+    background-color: goldenrod;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    animation: timeRunning 1s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+    to{
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 678px){
+    .carousel .list .champions .content{
+        padding-right: 0;
+    }
+    .carousel .list .champions .content .name{
+        font-size: 30px;
+    }
+}
