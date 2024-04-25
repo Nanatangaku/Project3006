@@ -104,3 +104,5 @@ function addClassToVisibleElements() {
 
 document.addEventListener("scroll", addClassToVisibleElements);
 addClassToVisibleElements();
+
+
