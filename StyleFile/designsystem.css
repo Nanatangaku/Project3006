@@ -14,7 +14,6 @@
 
     --font--family: "Poppins", sans-serif, ;
 
-
     --color-dark: #111;
     --color-red: red;
     --color-white: #fff;
@@ -23,15 +22,10 @@
 }
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-
-
 
 body {
 
@@ -194,6 +188,7 @@ body {
 .container2 {
     max-width: 95%;
     margin: auto;
+    margin-bottom: 20px;
     justify-content: center;
 }
 
@@ -233,7 +228,7 @@ body {
 .footerWrapper {
     background-color: var(--color-dark);
     color: grey;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .footerLinks_socials,
@@ -277,6 +272,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+.footerLinks_copyright2,
+.footerLinks_copyright3{
     margin-top: 20px;
 }
 
