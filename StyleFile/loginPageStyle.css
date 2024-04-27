@@ -16,7 +16,7 @@ section{
     background-position: center;
 }
 
-.wrapper{
+.login-container{
     position: relative;
     width: 400px;
     height: 450px;
@@ -79,7 +79,8 @@ h1{
     position: absolute;
     right: 8px;
     line-height: 57px;
-    font-size: 1.2em;
+    font-size: 2em;
+    color: white;
 }
 
 .remember-and-forgot{
@@ -129,4 +130,19 @@ h1{
     color: white;
     text-decoration: none;
     font-weight: 600;
+}
+
+.register-container{
+    position: relative;
+    width: 400px;
+    height: 560px;
+    background: transparent;
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
 }

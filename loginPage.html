@@ -3,21 +3,46 @@
 
 <head>
     <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="StyleFile/loginPageStyle.css">
+    <link rel="stylesheet" href="StyleFile\designsystem.css">
 </head>
 
 <body>
+    <header>
+        <div class="hero">
+            <nav class="navbar ">
+                <div class="navbar__logo ">
+    
+                    <div href="#" class="navbar__logo--text">RIOT <br> GAMES</div>
+    
+                    <img src="imgFile\lol-logo.png" alt="" class="navbar__logo--image">
+                </div>
+                <div class="navbar__menu text-center hidden">
+                    <a href="index.html" class="navbar__menu--1 Pointed">Home</a>
+                    <a href="PatchNote.html" class="navbar__menu--2 Pointed">Patch Notes</a>
+                    <a href="champion.html" class="navbar__menu--3 Pointed">Champions</a>
+                    <a href="loginPage.html" class="navbar__menu--4 Pointed">Login</a>
+                </div>
+                <div class="navbar_icons">
+                    <i class="bi bi-list white"></i>
+                    <i class="bi bi-x-lg white hide"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
     <section>
-        <div class="wrapper">
-            <form action="">
+        <!-- Login -->
+        <div class="login-container">
+            <form class="login-form" action="">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <span><img src="imgFile/user.png" class='bx bxs-user'></span>
+                    <span><i class='bx bx-user'></i></span>
                     <input type="text" name="username" required>
                     <label>Username</label>
                 </div>
                 <div class="input-box">
-                    <span><img src="imgFile/key.png" class='bx bx-key'></span>
+                    <span><i class='bx bx-key' ></i></span>
                     <input type="password" required>
                     <label>Password</label>
                 </div>
@@ -31,6 +56,75 @@
                 </div>
             </form>
         </div>
+        <!-- Registration-->
+        <div class="register-container">
+            <form class="register-form" action="">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <span><i class='bx bx-user' ></i></span>
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span><i class='bx bx-envelope bx-flip-horizontal' ></i></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span><i class='bx bx-key' ></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span><i class='bx bx-key' ></i></span>
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="register">
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+            </form>
     </section>
+    <div class="footerWrapper">
+        <div class="greyfooterLinks ">
+            <div class="Pointed" onclick="AboutLeagueofLegends()" class="greyfooterLinks--line">About League of Legends
+            </div>
+            <div class="Pointed" onclick="Helpusimprove()" class="greyfooterLinks--line">Help us improve</div>
+            <div class="Pointed" onclick="ServerStatus()" class="greyfooterLinks--line">Server Status</div>
+            <div class="Pointed" onclick="Support()" class="greyfooterLinks--line">Support</div>
+            <div class="Pointed" onclick="EsportsProSite()" class="greyfooterLinks--line">Esports Pro Site</div>
+        </div>
+        <div class="footerLinks container">
+            <div class="footerLinks_socials">
+                <img class="Pointed" onclick="youtube()" src="socials/youtube.svg" alt="">
+                <img class="Pointed" onclick="twitter()" src="socials/twitter.svg" alt="">
+                <img class="Pointed" onclick="facebook()" src="socials/facebook.svg" alt="">
+                <img class="Pointed" onclick="instagram()" src="socials/instagram.svg" alt="">
+                <img class="Pointed" onclick="tiktok()" src="socials/tiktok.svg" alt="">
+            </div>
+            <div class="footerLinks_copyright container">
+                ™ & © 2024 Riot Games, Inc. League of Legends and all related logos, characters, names and
+                distinctive<br>
+                likenesses thereof are exclusive property of Riot Games, Inc. All Rights Reserved.
+            </div>
+
+            <div class="footerLinks_copyright2 ">
+                <div class="Pointed" onclick="PRIVACYNOICE()" class="footerLinks_copyright2--1">Privacy Noice</div>
+                <div class="Pointed" onclick="Termsofservice()" class="footerLinks_copyright2--2">Terms of service</div>
+                <div class="Pointed" onclick="CookiePolicy()" class="footerLinks_copyright2--3">Cookie Policy</div>
+                <div class="Pointed" onclick="Companyinformation()" class="footerLinks_copyright2--4">Company
+                    information</div>
+                <div class="Pointed" onclick="cookiepreferences()" class="footerLinks_copyright2--5">cookie preferences
+                </div>
+            </div>
+
+            <div class="footerLinks_copyright3">
+                <img class="Pointed" onclick="test12()" src="img/pegi-eu.png" alt=""
+                    class="footerLinks_copyright3--img">
+                <img class="Pointed" onclick="test13()" src="img/usk-12.png" alt="" class="footerLinks_copyright3--img">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
