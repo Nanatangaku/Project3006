@@ -16,19 +16,42 @@ section{
     background-position: center;
 }
 
-.login-container{
+.form-area{
     position: relative;
-    width: 400px;
-    height: 450px;
-    background: transparent;
     display: flex;
-    border: 2px solid rgba(255, 255, 255, .5);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 412px;
+    height: 520px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+    background: transparent;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
@@ -38,6 +61,7 @@ h1{
 }
 
 .input-box{
+    display: flex;
     position: relative;
     width: 310px;
     height: 50px;
@@ -132,17 +156,4 @@ h1{
     font-weight: 600;
 }
 
-.register-container{
-    position: relative;
-    width: 400px;
-    height: 560px;
-    background: transparent;
-    display: flex;
-    border: 2px solid rgba(255, 255, 255, .5);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    align-items: center;
-}
+
