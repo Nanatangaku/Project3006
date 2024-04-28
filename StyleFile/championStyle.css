@@ -6,11 +6,6 @@
     color: white;
 }
 
-header{
-    top: 0;
-    z-index: 100;
-}
-
 .footerwrapper{
     z-index: 100;
     margin: 0;
@@ -353,12 +348,5 @@ header{
     .carousel .list .champions .content .name{
         font-size: 30px;
     }
-}
-
-@media screen and (max-width: 780px){
-    body{
-        width: 100vw;
-    }
-    
 }
 
