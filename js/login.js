@@ -1,5 +1,7 @@
 var x = document.getElementById("login");
 var y = document.getElementById("register");
+var uname = document.getElementById("user");
+var pw = document.getElementById("pw");
 
 function login(){
     x.style.left = "4px";
@@ -16,5 +18,16 @@ function register() {
     y.style.right = "4px";
 }
 function tohome() {
-    window.location.href = "index.html";
+    if(uname.value == "admin" && pw.value == "admin"){
+        window.location.href = "home.html";
+    }
+    if(uname.value == "user" && pw.value == "user"){
+        window.location.href = "home.html";
+    }
+    if(uname.value == "root" && pw.value == "root"){
+        window.location.href = "home.html";
+    }
+    if(uname.value == " " && pw.value == " "){
+        window.location.href = "home.html";
+    }
 }
