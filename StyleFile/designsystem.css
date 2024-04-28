@@ -273,8 +273,9 @@ body {
     align-items: center;
     gap: 40px;
 }
+
 .footerLinks_copyright2,
-.footerLinks_copyright3{
+.footerLinks_copyright3 {
     margin-top: 20px;
 }
 
@@ -292,6 +293,22 @@ body {
     .grid {
         grid-template-columns: repeat(2, 1fr);
 
+    }
+
+    .navbar__menu {
+        z-index: 1;
+        background: #111;
+        position: absolute;
+        top: 6vh;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: fixed;
     }
 }
 
@@ -317,6 +334,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 50px;
+        position: fixed;
     }
 
     .navbar__menu--1 {
@@ -357,6 +375,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 50px;
+        position: fixed;
     }
 
     .navbar_icons {
