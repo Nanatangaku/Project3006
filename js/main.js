@@ -1,15 +1,3 @@
-let top_btn = document.querySelector('.top-btn');
-
-top_btn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-});
-
-
-
-
 let openBtn = document.querySelector('.bi-list');
 let closeBtn = document.querySelector('.bi-x-lg');
 let menu = document.querySelector('.navbar__menu');
@@ -27,7 +15,6 @@ closeBtn.addEventListener("click", () => {
     closeBtn.classList.toggle('hide');
     menu.classList.toggle('hidden');
 });
-
 
 
 function AboutLeagueofLegends() {

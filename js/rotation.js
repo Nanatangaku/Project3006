@@ -57,3 +57,13 @@ for (let i = 0; i < m.length; i++) {
 }
 
 timer();
+
+
+let top_btn = document.querySelector('.top-btn');
+
+top_btn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+});

@@ -17,3 +17,5 @@ function sectionOne_lineTwo__mid() {
 function sectionOne_lineTwo__right() {
     window.open("https://www.leagueoflegends.com/en-gb/news/game-updates/patch-14-3-notes/");
 }
+
+
