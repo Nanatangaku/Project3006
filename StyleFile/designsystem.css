@@ -308,7 +308,25 @@ body {
         justify-content: center;
         align-items: center;
         gap: 50px;
-        position: fixed;
+    }
+
+    .navbar__menu--1 {
+        margin-top: -200px;
+    }
+
+    .navbar_icons {
+        display: block;
+    }
+
+
+    .hide {
+        display: none;
+    }
+
+
+    .hidden {
+        z-index: -1;
+        opacity: 0%;
     }
 }
 
@@ -334,7 +352,6 @@ body {
         justify-content: center;
         align-items: center;
         gap: 50px;
-        position: fixed;
     }
 
     .navbar__menu--1 {
@@ -375,7 +392,6 @@ body {
         justify-content: center;
         align-items: center;
         gap: 50px;
-        position: fixed;
     }
 
     .navbar_icons {
