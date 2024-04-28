@@ -51,7 +51,7 @@
                         <label><input type="checkbox" name="remember">Remember me</label>
                         <a href="#">Forgot password?</a>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn" onclick="tohome()">Login</button>
                     <div class="register">
                         <p>Don't have an account? <a href="#" onclick="register()">Register</a></p>
                     </div>
@@ -74,15 +74,15 @@
                     </div>
                     <div class="input-box">
                         <span><i class='bx bx-key' ></i></span>
-                        <input type="password" required>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         <label>Password</label>
                     </div>
                     <div class="input-box">
                         <span><i class='bx bx-key' ></i></span>
-                        <input type="password" required>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         <label>Confirm Password</label>
                     </div>
-                    <button type="submit" class="btn">Register</button>
+                    <button type="submit" class="btn" onclick="backtologin()" >Register</button>
                     <div class="register">
                         <p>Already have an account? <a href="#" onclick="login()">Login</a></p>
                     </div>
