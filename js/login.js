@@ -19,15 +19,15 @@ function register() {
 }
 function tohome() {
     if(uname.value == "admin" && pw.value == "admin"){
-        window.location.href = "home.html";
-    }
+        window.location.href = "index.html";
+    } 
     if(uname.value == "user" && pw.value == "user"){
-        window.location.href = "home.html";
-    }
+        window.location.href = "index.html";
+    } 
     if(uname.value == "root" && pw.value == "root"){
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
     if(uname.value == " " && pw.value == " "){
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }
